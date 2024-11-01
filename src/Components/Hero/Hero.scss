@@ -74,15 +74,23 @@
     position: absolute;
     top: 0;
     right: 0;
+
     img {
       width: 100%;
       height: 100%;
     }
+
     @include mobile {
       height: 50%;
-      padding-right: 10%;
+
       top: unset;
       bottom: -5%;
+      display: flex;
+
+      img {
+        height: auto; // maintains aspect ratio
+        margin: 0 auto;
+      }
     }
   }
 }
