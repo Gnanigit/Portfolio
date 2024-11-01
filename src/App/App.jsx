@@ -2,10 +2,14 @@ import "./App.scss";
 import Navbar from "../Components/Navbar/Navbar";
 import Hero from "../Components/Hero/Hero";
 import Parallax from "../Components/Parallax/Parallax";
+import Projects from "../Components/Projects/Projects";
+import Contact from "../Components/Contact/Contact";
+import Cursor from "../Components/Cursor/Cursor";
 
 const App = () => {
   return (
     <div>
+      <Cursor />
       <section id="Homepage">
         <Navbar />
         <Hero />
@@ -19,11 +23,12 @@ const App = () => {
       <section id="Projects">
         <Parallax type="Projects" />
       </section>
-      <section>My Projects</section>
 
-      <section id="Contact"></section>
+      <Projects />
 
-      <section id="About"></section>
+      <section id="Contact">
+        <Contact />
+      </section>
     </div>
   );
 };

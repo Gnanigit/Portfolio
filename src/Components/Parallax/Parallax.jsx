@@ -10,8 +10,15 @@ const Parallax = ({ type }) => {
     offset: ["start start", "end start"],
   });
 
-  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
-  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const scaleFactor = 0.7;
+  const yText = useTransform(
+    scrollYProgress,
+    (value) => `${value * 500 * scaleFactor}%`
+  );
+  const yBg = useTransform(
+    scrollYProgress,
+    (value) => `${value * 100 * scaleFactor}%`
+  );
 
   return (
     <div
