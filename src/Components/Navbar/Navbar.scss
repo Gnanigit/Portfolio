@@ -29,10 +29,22 @@
     .social {
       display: flex;
       gap: 20px;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
 
-      img {
-        width: 18px;
-        height: 18px;
+        img {
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+
+          @include mobile {
+            width: 20px;
+            height: 20px;
+          }
+        }
       }
     }
   }

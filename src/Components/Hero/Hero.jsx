@@ -40,10 +40,25 @@ const Hero = () => {
             Full Stack Developer & UI Designer
           </motion.h1>
           <motion.div className="buttons" variants={textVariants}>
-            <motion.button variants={textVariants}>
-              See the latest works
+            <a
+              href="/Resume/Gnaneswar_Yalla_Resume.pdf"
+              download="Gnaneswar_Yalla_Resume.pdf"
+            >
+              <motion.button variants={textVariants}>
+                Download Resume
+              </motion.button>
+            </a>
+
+            <motion.button
+              onClick={() =>
+                document
+                  .querySelector("#Contact")
+                  .scrollIntoView({ behavior: "smooth" })
+              }
+              variants={textVariants}
+            >
+              Contact me
             </motion.button>
-            <motion.button variants={textVariants}>Contact me</motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}

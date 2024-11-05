@@ -17,17 +17,33 @@ const Navbar = () => {
           Gnani
         </motion.span>
         <div className="social">
-          <a href="#">
-            <img src="/facebook.png"></img>
+          <a
+            href="https://www.facebook.com/gnaneswar.yall.3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/facebook.png" alt="Facebook" />
           </a>
-          <a href="#">
-            <img src="/instagram.png"></img>
+          <a
+            href="https://www.instagram.com/gnani_178/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/instagram.png" alt="Instagram" />
           </a>
-          <a href="#">
-            <img src="/youtube.png"></img>
+          <a
+            href="https://www.youtube.com/@gnaniyalla"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/youtube.png" alt="YouTube" />
           </a>
-          <a href="#">
-            <img src="/github.png"></img>
+          <a
+            href="https://github.com/Gnanigit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/github.png" alt="GitHub" />
           </a>
         </div>
       </div>

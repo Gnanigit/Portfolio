@@ -22,7 +22,28 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.description}</p>
-            <button>See Demo</button>
+            <div className="buttons">
+              {item.link.length > 0 && (
+                <a
+                  className="links"
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>See Demo</button>
+                </a>
+              )}
+              {item.Github.length > 0 && (
+                <a
+                  className="links"
+                  href={item.Github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>Github</button>
+                </a>
+              )}
+            </div>
           </motion.div>
         </div>
       </div>

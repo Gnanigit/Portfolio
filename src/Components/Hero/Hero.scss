@@ -49,8 +49,9 @@
           color: white;
           margin-right: 20px;
           font-weight: 300;
-          cursor: pointer;
+          cursor: pointer !important;
         }
+        z-index: 1000;
       }
 
       img {
@@ -67,6 +68,7 @@
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
+    z-index: 1;
   }
 
   .imageContainer {
@@ -88,7 +90,7 @@
       display: flex;
 
       img {
-        height: auto; // maintains aspect ratio
+        height: auto;
         margin: 0 auto;
       }
     }
