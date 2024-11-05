@@ -35,6 +35,15 @@ const items = [
     link: "",
     Github: "https://github.com/Gnanigit/Text-Translator-Website",
   },
+  {
+    id: 5,
+    title: "Login APP",
+    description:
+      "React-based Profile App built with the MERN stack, offering a secure and user-friendly experience. Key features include profile photo uploads, password reset via OTP, JWT-based session management, and cloud storage with MongoDB Atlas. The app ensures full authentication and user feedback with toast notifications, while integrating Mailer and Mailgen for structured OTP emails.",
+    image: "/Projects/LoginAPP.png",
+    link: "https://login-app-pink.vercel.app/",
+    Github: "https://github.com/Gnanigit/ProfileApp",
+  },
 ];
 
 export default items;
