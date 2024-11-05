@@ -37,9 +37,9 @@ const items = [
   },
   {
     id: 5,
-    title: "Login APP",
+    title: "Login App",
     description:
-      "React-based Profile App built with the MERN stack, offering a secure and user-friendly experience. Key features include profile photo uploads, password reset via OTP, JWT-based session management, and cloud storage with MongoDB Atlas. The app ensures full authentication and user feedback with toast notifications, while integrating Mailer and Mailgen for structured OTP emails.",
+      "React-based Profile App using the MERN stack, featuring profile photo uploads, OTP password reset, JWT session management, and MongoDB Atlas cloud storage. Includes full authentication and toast notifications, with Mailer and Mailgen for structured OTP emails.",
     image: "/Projects/LoginAPP.png",
     link: "https://login-app-pink.vercel.app/",
     Github: "https://github.com/Gnanigit/ProfileApp",
