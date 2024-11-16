@@ -22,10 +22,10 @@
     gap: 40px;
 
     @include mobile {
-      gap: 10px;
+      gap: 15px;
       text-align: center;
       align-items: center;
-      margin-top: 40px;
+      margin-top: 20px;
     }
 
     h1 {
@@ -34,6 +34,7 @@
 
       @include mobile {
         font-size: 36px;
+        line-height: 50px;
       }
     }
 
@@ -48,8 +49,9 @@
     width: 100%;
 
     @include mobile {
-      padding: 20px;
+      padding: 10px;
       width: 100%;
+      margin-top: -110px;
     }
     .phoneSvg {
       stroke: orange;

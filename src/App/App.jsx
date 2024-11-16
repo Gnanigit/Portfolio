@@ -6,7 +6,7 @@ import Projects from "../Components/Projects/Projects";
 import Contact from "../Components/Contact/Contact";
 import Cursor from "../Components/Cursor/Cursor";
 import Skills from "../Components/Skills/Skills";
-
+import Experience from "../Components/Experience/Experience";
 const App = () => {
   return (
     <div>
@@ -28,6 +28,9 @@ const App = () => {
       </section>
 
       <Projects />
+      <section id="My Experience">
+        <Experience />
+      </section>
 
       <section id="Contact">
         <Contact />

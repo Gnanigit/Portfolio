@@ -6,19 +6,16 @@ import "./Skills.scss";
 const Skills = () => {
   const [isMobile, setIsMobile] = useState(false);
 
-  // Check screen size to determine if pagination should be applied
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 738); // Mobile size threshold
+      setIsMobile(window.innerWidth <= 738);
     };
 
-    handleResize(); // Initial check
-    window.addEventListener("resize", handleResize); // Re-check on resize
-
+    handleResize();
+    window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // State for pagination on mobile
   const [currentPage, setCurrentPage] = useState(0);
   const skillsPerPage = 2;
   const paginatedSkills = skills.slice(
