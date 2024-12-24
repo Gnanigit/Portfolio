@@ -97,6 +97,7 @@ const Contact = () => {
           </svg>
         </motion.div>
         <motion.form
+          className="form-fields"
           onSubmit={sendEmail}
           ref={formRef}
           initial={{ opacity: 0 }}
@@ -109,7 +110,7 @@ const Contact = () => {
           <textarea rows={8} placeholder="Your Message" name="message" />
           <button type="submit">Submit</button>
           {error && "Error"}
-          {success && "Success"}
+          {success && "Successfully sent email"}
         </motion.form>
       </div>
     </motion.div>

@@ -76,7 +76,7 @@
         border: 1px solid white;
         color: white;
         border-radius: 5px;
-
+        z-index: 1000;
         @include mobile {
           padding: 10px;
         }
@@ -88,6 +88,7 @@
         background-color: orange;
         cursor: pointer;
         font-weight: 500;
+        z-index: 1000;
         @include mobile {
           padding: 10px;
         }

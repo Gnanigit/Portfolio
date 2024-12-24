@@ -30,8 +30,8 @@ const App = () => {
       <div className="box">
         <Projects />
       </div>
-      <section className="section-app" id="Work Experience">
-        <Parallax type="Work Experience" />
+      <section className="section-app" id="Experience">
+        <Parallax type="Experience" />
       </section>
 
       <div className="box">
