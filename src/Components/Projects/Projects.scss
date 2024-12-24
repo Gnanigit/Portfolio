@@ -2,6 +2,8 @@
 
 .projects {
   position: relative;
+  // scroll-snap-type: y mandatory;
+  // overflow-y: scroll;
 
   .progress {
     position: sticky;
@@ -10,7 +12,7 @@
     padding-top: 50px;
     text-align: center;
     color: orange;
-    font-size: 36px;
+    font-size: 32px;
 
     @include mobile {
       padding-top: calc(100vh - 100px);
@@ -23,117 +25,122 @@
     }
   }
 
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    margin-top: 30px;
+  .section-projects {
+    height: 100vh;
+    scroll-snap-align: center;
     overflow: hidden;
-    @include mobile {
-      margin-top: 0px;
-    }
-
-    .wrapper {
-      max-width: 1366px;
-      height: 100%;
-      margin: auto;
+    .container {
       display: flex;
       align-items: center;
-
       justify-content: center;
-      gap: 50px;
-
+      width: 100%;
+      height: 100%;
+      margin-top: 30px;
+      overflow: hidden;
       @include mobile {
-        flex-direction: column;
+        margin-top: 0px;
       }
 
-      .imageContainer {
-        flex: 1;
-        height: 50%;
-
-        @include mobile {
-          margin-top: 3rem;
-          width: 100%;
-          max-height: 300px;
-        }
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          border-radius: 10px;
-          border: 1px solid rgba(255, 255, 255, 0.125);
-          box-shadow: 0px 0px 70px rgba(43, 114, 255, 0.7);
-
-          @include mobile {
-            object-fit: contain;
-          }
-        }
-      }
-
-      .textContainer {
-        flex: 1;
+      .wrapper {
+        max-width: 1366px;
+        height: 100%;
+        margin: auto;
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 30px;
-        margin-bottom: 100px;
-        z-index: 1000;
+        align-items: center;
+
+        justify-content: center;
+        gap: 50px;
 
         @include mobile {
-          transform: none !important;
-          padding: 10px;
-          margin-bottom: 0px;
-          align-items: center;
-          text-align: center;
+          flex-direction: column;
         }
 
-        h2 {
-          font-size: 62px;
+        .imageContainer {
+          flex: 1;
+          height: 50%;
 
           @include mobile {
-            font-size: 36px;
-          }
-        }
-
-        p {
-          color: gray;
-          font-size: 18px;
-
-          @include mobile {
-            font-size: 16px;
-          }
-        }
-
-        .buttons {
-          display: flex;
-          gap: 10px;
-
-          @include mobile {
-            flex-direction: column;
+            margin-top: 3rem;
+            width: 100%;
+            max-height: 300px;
           }
 
-          button {
-            background-color: orange;
-            border: none;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             border-radius: 10px;
-            padding: 10px;
-            width: 170px;
-            font-size: 18px;
-            font-weight: 400;
-            cursor: pointer;
-            transition: background-color 0.3s, border 0.3s, color 0.3s,
-              box-shadow 0.3s;
-            box-shadow: 0px 4px 8px rgba(255, 165, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.125);
+            box-shadow: 0px 0px 70px rgba(43, 114, 255, 0.7);
+
+            @include mobile {
+              object-fit: contain;
+            }
           }
-          button:hover {
-            background-color: transparent;
-            border: 1.5px solid orange;
-            color: orange;
-            box-shadow: 0px 6px 12px rgba(255, 165, 0, 0.7);
+        }
+
+        .textContainer {
+          flex: 1;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 30px;
+          margin-bottom: 100px;
+          z-index: 1000;
+
+          @include mobile {
+            transform: none !important;
+            padding: 10px;
+            margin-bottom: 0px;
+            align-items: center;
+            text-align: center;
+          }
+
+          h2 {
+            font-size: 62px;
+
+            @include mobile {
+              font-size: 36px;
+            }
+          }
+
+          p {
+            color: gray;
+            font-size: 18px;
+
+            @include mobile {
+              font-size: 16px;
+            }
+          }
+
+          .buttons {
+            display: flex;
+            gap: 10px;
+
+            @include mobile {
+              flex-direction: column;
+            }
+
+            button {
+              background-color: orange;
+              border: none;
+              border-radius: 10px;
+              padding: 10px;
+              width: 170px;
+              font-size: 18px;
+              font-weight: 400;
+              cursor: pointer;
+              transition: background-color 0.3s, border 0.3s, color 0.3s,
+                box-shadow 0.3s;
+              box-shadow: 0px 4px 8px rgba(255, 165, 0, 0.5);
+            }
+            button:hover {
+              background-color: transparent;
+              border: 1.5px solid orange;
+              color: orange;
+              box-shadow: 0px 6px 12px rgba(255, 165, 0, 0.7);
+            }
           }
         }
       }

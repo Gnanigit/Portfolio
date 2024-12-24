@@ -11,30 +11,40 @@ const App = () => {
   return (
     <div>
       <Cursor />
-      <section id="Homepage">
+      <section className="section-app" id="Homepage">
         <Navbar />
         <Hero />
       </section>
 
-      <section id="My Skills">
+      <section className="section-app" id="My Skills">
         <Parallax type="mySkills" />
       </section>
-      <section>
-        <Skills />
-      </section>
 
-      <section id="Projects">
+      <div className="box" style={{ marginBottom: "5rem" }}>
+        <Skills />
+      </div>
+      <section className="section-app" id="Projects">
         <Parallax type="Projects" />
       </section>
 
-      <Projects />
-      <section id="Experience">
-        <Experience />
+      <div className="box">
+        <Projects />
+      </div>
+      <section className="section-app" id="Work Experience">
+        <Parallax type="Work Experience" />
       </section>
 
-      <section id="Contact">
+      <div className="box">
+        <Experience />
+      </div>
+
+      <section className="section-app" id="Contact">
         <Contact />
       </section>
+
+      {/* <div className="box" id="Contact">
+        <Contact />
+      </div> */}
     </div>
   );
 };

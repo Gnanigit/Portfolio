@@ -13,7 +13,7 @@ const Single = ({ item }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section>
+    <section className="section-projects">
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
@@ -30,7 +30,7 @@ const Single = ({ item }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button>See Demo</button>
+                  <button>Visit Website</button>
                 </a>
               )}
               {item.Github.length > 0 && (

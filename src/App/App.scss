@@ -1,6 +1,8 @@
 html {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y;
   scroll-behavior: smooth;
+  // scroll-snap-type: none;
+  overflow-y: auto;
 }
 
 * {
@@ -20,11 +22,16 @@ a {
   color: inherit;
 }
 
-section {
+.section-app {
   height: 100vh;
 
   scroll-snap-align: center;
   overflow: hidden;
+}
+
+.box {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
 }
 
 @mixin mobile {
